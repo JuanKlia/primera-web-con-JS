@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.main {
+  padding: 20px;
+  display: grid;
+  gap: 25px;
+  background-color: black;
+
+  margin: 0 auto;
+}
+
+.titulo {
+  margin: 0;
+  color: blueviolet;
+  justify-self: center;
+}
+@media (min-width: 850px) {
+  .titulo {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.contenedor-videojuegos {
+  display: grid;
+  gap: 50px;
+}
+@media (min-width: 850px) {
+  .contenedor-videojuegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@keyframes fondo {
+  0% {
+    background-color: pink;
+  }
+  25% {
+    background-color: burlywood;
+  }
+  50% {
+    background-color: yellow;
+  }
+  75% {
+    background-color: lawngreen;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
+
+.juego {
+  display: grid;
+  border: solid;
+  padding: 10px;
+  animation: fondo;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  border-radius: 20px;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  gap: 30px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media (min-width: 850px) {
+  .juego {
+  }
+}
+
+.imagen {
+  align-self: center;
+  justify-self: center;
+}
+
+.informacion-juego {
+  display: grid;
+  gap: 15px;
+}
+
+.titulo-juego {
+  margin: 0;
+  font-size: 20px;
+}
+.genero-juego {
+  margin: 0;
+  font-size: 20px;
+}
+.link-descarga {
+  font-size: 30px;
+  justify-self: center;
+  text-decoration: none;
+  background-color: black;
+  color: blueviolet;
+  border-radius: 5px;
+}
+
+.sinapsis-titulo {
+  margin: 0;
+  font-size: 20px;
+}
+.article {
+  text-align: left;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
